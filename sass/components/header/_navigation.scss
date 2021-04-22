@@ -10,7 +10,7 @@
     color: $accentColor;
   }
 }
-.navigation__link:not(:last-child) {
+.navigation__item:not(:last-child) {
   margin-right: 45px;
 }
 
