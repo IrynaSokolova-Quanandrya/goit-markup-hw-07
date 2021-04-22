@@ -5,10 +5,6 @@
 .navigation {
   display: flex;
   margin-left: 93px;
-
-  &__link--current {
-    color: $accentColor;
-  }
 }
 .navigation__item:not(:last-child) {
   margin-right: 45px;
@@ -32,6 +28,9 @@
   &:focus {
     color: $accentColor;
   }
+}
+.navigation__link--current {
+  color: $accentColor;
 }
 .navigation__link--current::after {
   position: absolute;
