@@ -1194,7 +1194,7 @@ img {
 
 .card-set__title {
   margin-bottom: 4px;
-  color: var(--title-text-color);
+  color: #212121;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
