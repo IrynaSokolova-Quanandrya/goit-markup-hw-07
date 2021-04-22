@@ -5,42 +5,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-    rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css">
-    <link rel="stylesheet" href="./css/style.css">
-</head>    
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css">
+    <link rel="stylesheet" href="./dist/css/main.min.css">
+</head>
 
-<!--Page portfolio-->
 <body>
     <!--Шапка сайта-->
-<header>
-    <div class="container nav">
-        <a class="logo" href=""><span class="logo__text">Web</span>Studio</a>
-        <nav>
-            <ul class="navigation list">
-                <li class="navigation__item"><a href="./" class="navigation__link navigation__link--current">Студия</a>
+    <header>
+        <div class="container nav">
+            <a class="logo" href=""><span class="logo__text">Web</span>Studio</a>
+            <nav>
+                <ul class="navigation list">
+                    <li class="navigation__item"><a href="./"
+                            class="navigation__link navigation__link--current">Студия</a></li>
+                    <li class="navigation__item"><a href="./portfolio.html" class="navigation__link">Портфолио</a></li>
+                    <li class="navigation__item"><a href="" class="navigation__link">Контакты</a></li>
+                </ul>
+            </nav>
+            <ul class="contacts list">
+                <li class="contacts__item">
+                    <a class="contacts__link" href="mail:info@devstudio.com">
+                        <svg class="contacts__icon" width="16" height="12">
+                            <use href="./images/icons.svg/symbol-defs.svg#icon-envelope-hover"></use>
+                        </svg>info@devstudio.com</a>
                 </li>
-                <li class="navigation__item"><a href="./portfolio.html" class="navigation__link">Портфолио</a></li>
-                <li class="navigation__item"><a href="" class="navigation__link">Контакты</a></li>
+                <li class="contacts__item">
+                    <a class="contacts__link" href="tel:+380961111111">
+                        <svg class="contacts__icon" width="10" height="16">
+                            <use href="./images/icons.svg/symbol-defs.svg#icon-smartphone"></use>
+                        </svg>+38 096 111 11 11</a>
+                </li>
             </ul>
-        </nav>
-        <ul class="contacts list">
-            <li class="contacts__item">
-                <a class="contacts__link" href="mail:info@devstudio.com">
-                    <svg class="contacts__icon" width="16" height="12">
-                        <use href="./images/icons.svg/symbol-defs.svg#icon-envelope-hover"></use>
-                    </svg>info@devstudio.com</a>
-            </li>
-            <li class="contacts__item">
-                <a class="contacts__link" href="tel:+380961111111">
-                    <svg class="contacts__icon" width="10" height="16">
-                        <use href="./images/icons.svg/symbol-defs.svg#icon-smartphone"></use>
-                    </svg>+38 096 111 11 11</a>
-            </li>
-        </ul>
-    </div>
-</header>
+        </div>
+    </header>
     <!--Основная секция-->
 <main>
 <section class="section">
@@ -206,28 +207,28 @@
             <b class="join__title">присоединяйтесь</b>
             <ul class="networks list">
                 <li class="networks__item">
-                    <a class="networks__link networks__link--reverse" href="">
+                    <a class="networks__link networks__link--inverse" href="">
                         <svg class="networks__icon" width="20" height="20">
                             <use href="./images/icons.svg/symbol-defs.svg#icon-instagram"></use>
                         </svg>
                     </a>
                 </li>
                 <li class="networks__item">
-                    <a class="networks__link networks__link--revers" href="">
+                    <a class="networks__link networks__link--inverse" href="">
                         <svg class="networks__icon" width="20" height="20">
                             <use href="./images/icons.svg/symbol-defs.svg#icon-twitter"></use>
                         </svg>
                     </a>
                 </li>
                 <li class="networks__item">
-                    <a class="networks__link networks__link--reverse" href="">
+                    <a class="networks__link networks__link--inverse" href="">
                         <svg class="networks__icon" width="20" height="20">
                             <use href="./images/icons.svg/symbol-defs.svg#icon-facebook"></use>
                         </svg>
                     </a>
                 </li>
                 <li class="networks__item">
-                    <a class="networks__link networks__link--reverse" href="">
+                    <a class="networks__link networks__link--inverse" href="">
                         <svg class="networks__icon" width="20" height="20">
                             <use href="./images/icons.svg/symbol-defs.svg#icon-linkedin"></use>
                         </svg>
@@ -241,12 +242,13 @@
                 <b class="footer__title">Подпишитесь на рассылку</b>
                 <div class="footer__field">
                     <label for="user-email"></label>
-                    <input class="footer__imput" type="email" name="email" id="user-email" placeholder="E-mail" />
+                    <input class="footer__input" type="email" name="email" id="user-email" placeholder="E-mail" />
                     <button class="footer__button" type="submit">Подписаться</button>
                 </div>
             </form>
         </div>
     </div>
 </footer>
+
 </body>
 </html>
