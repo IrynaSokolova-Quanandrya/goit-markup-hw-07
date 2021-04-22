@@ -13,55 +13,56 @@
   box-sizing: border-box;
 }
 
-body {
+/*body {
   color: var(--primary-text-color);
   background-color: #ffffff;
   font-family: roboto, sans-serif;
-}
-a {
+}*/
+/*a {
   text-decoration: none;
   color: var(--primary-text-color);
-}
-.section {
+}*/
+./*section {
   padding-top: 94px;
   padding-bottom: 94px;
-}
-.container {
+}*/
+/*.container {
   width: 1200px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 0;
   padding-left: 15px;
   padding-right: 15px;
-}
-h1,
+}*/
+/*h1,
 h2,
 h3,
 p,
 ul {
   margin-top: 0;
   margin-bottom: 0;
-}
+}*/
 
-img {
+/*img {
   display: block;
   max-width: 100%;
   height: auto;
-}
+}*/
 
-.list {
+/*.list {
   display: flex;
   justify-content: space-between;
   padding: 0;
   margin: 0;
   list-style: none;
-}
+}*/
 /*шапка сайта*/
 
-header {
+/*header {
   border-bottom: 1px solid #cccccc;
-}
+}*/
 /*logo*/
+
 .logo {
   color: #000000;
 
@@ -88,7 +89,7 @@ header {
   justify-content: flex-start;
 }
 
-.navigation__link--current {
+/*.navigation__link--current {
   color: var(--accent-color);
 }
 
@@ -96,8 +97,8 @@ header {
   display: flex;
   margin-left: 93px;
 }
-
-.navigation__item:not(:last-child) {
+*/
+/*.navigation__item:not(:last-child) {
   margin-right: 45px;
 }
 
@@ -129,7 +130,7 @@ header {
   height: 4px;
   border-radius: 2px;
   background-color: var(--accent-color);
-}
+}*/
 
 .contacts {
   margin-left: auto;
