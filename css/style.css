@@ -723,7 +723,7 @@ X/*.hero {
 /*PORTFOLIO*/
 
 /*filters*/
-.filter {
+/*.filter {
   margin-bottom: 34px;
   justify-content: center;
 }
@@ -755,7 +755,7 @@ X/*.hero {
 
 /*примеры работ*/
 
-.card-set {
+/*.card-set {
   display: flex;
   flex-wrap: wrap;
   margin-left: -30px;
@@ -817,10 +817,10 @@ X/*.hero {
   font-size: 16px;
   line-height: 1.8;
   letter-spacing: 0.03em;
-}
+}*/
 
 /*Оверлей на карточках*/
-.card-set__img {
+/*.card-set__img {
   position: relative;
   width: 100%;
   height: 100%;
@@ -851,3 +851,4 @@ X/*.hero {
 .card-set__thumb:focus .card-set__overlay {
   transform: translateY(0);
 }
+*/
