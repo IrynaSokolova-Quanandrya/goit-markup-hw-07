@@ -28,10 +28,11 @@
   &:focus {
     color: $accentColor;
   }
+  &--current {
+    color: $accentColor;
+  }
 }
-.navigation__link--current {
-  color: $accentColor;
-}
+
 .navigation__link--current::after {
   position: absolute;
   content: "";
