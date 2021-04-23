@@ -9,6 +9,9 @@
 .navigation__item:not(:last-child) {
   margin-right: 45px;
 }
+.navigation__link--current {
+  color: $accentColor;
+}
 
 .navigation__link {
   position: relative;
@@ -26,9 +29,6 @@
 
   &:hover,
   &:focus {
-    color: $accentColor;
-  }
-  &--current {
     color: $accentColor;
   }
 }
