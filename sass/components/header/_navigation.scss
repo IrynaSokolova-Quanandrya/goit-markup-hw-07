@@ -9,9 +9,6 @@
 .navigation__item:not(:last-child) {
   margin-right: 45px;
 }
-.navigation__link--current {
-  color: $accentColor;
-}
 
 .navigation__link {
   position: relative;
@@ -32,7 +29,9 @@
     color: $accentColor;
   }
 }
-
+.navigation__link--current {
+  color: $accentColor;
+}
 .navigation__link--current::after {
   position: absolute;
   content: "";
