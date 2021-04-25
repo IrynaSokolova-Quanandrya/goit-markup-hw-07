@@ -758,6 +758,8 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 270px;
+  height: 120px;
   margin-bottom: 30px;
   background-color: #f5f4fa;
 }
@@ -1149,7 +1151,7 @@ img {
           box-shadow: 0 4px 4px 0 #757575;
 }
 
-.card-set {
+.projects {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1159,14 +1161,14 @@ img {
   margin-top: -30px;
 }
 
-.card-set__link {
+.projects__item {
   -ms-flex-preferred-size: calc((100% - 90px) / 3);
       flex-basis: calc((100% - 90px) / 3);
   margin-left: 30px;
   margin-top: 30px;
 }
 
-.card-set__link > a {
+.projects__item > a {
   display: block;
   -webkit-transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1174,34 +1176,28 @@ img {
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.card-set__thumb:hover,
-.card-set__thumb:focus {
+.projects__link:hover,
+.projects__link:focus {
   -webkit-box-shadow: 0 4px 4px 0 #757575;
           box-shadow: 0 4px 4px 0 #757575;
 }
 
-.card {
-  display: block;
-  border-top: transparent;
-  overflow: hidden;
-}
-
-.card-set__text {
+.projects__text {
   padding: 20px 24px;
   border-left: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
 }
 
-.card-set__title:nth-child(3n) {
+.projects__title:nth-child(3n) {
   margin-right: 0;
 }
 
-.card-set__title:nth-last-child(-n + 3) {
+.projects__title:nth-last-child(-n + 3) {
   margin-bottom: 0;
 }
 
-.card-set__title {
+.projects__title {
   margin-bottom: 4px;
   color: #212121;
   font-weight: 700;
@@ -1210,7 +1206,7 @@ img {
   letter-spacing: 0.06em;
 }
 
-.card-set__type {
+.projects__type {
   margin-bottom: 20px;
   color: #757575;
   font-size: 16px;
@@ -1218,14 +1214,14 @@ img {
   letter-spacing: 0.03em;
 }
 
-.card-set__img {
+.projects__img {
   position: relative;
   width: 100%;
   height: 100%;
   overflow: hidden;
 }
 
-.card-set__overlay {
+.projects__overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -1245,8 +1241,8 @@ img {
   line-height: 1.5;
 }
 
-.card-set__thumb:hover .card-set__overlay,
-.card-set__thumb:focus .card-set__overlay {
+.projects__link:hover .projects__overlay,
+.projects__link:focus .projects__overlay {
   -webkit-transform: translateY(0);
           transform: translateY(0);
 }
