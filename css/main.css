@@ -1111,7 +1111,7 @@ img {
   padding-right: 28px;
   margin-left: 10px;
   content: "";
-  background-image: url("/images/icons.svg/icon-send.svg");
+  background-image: url("./images/icons.svg/icon-send.svg");
   background-repeat: no-repeat;
   background-size: contain;
 }
