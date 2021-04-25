@@ -1,11 +1,11 @@
+@import "./base/normalize";
+
 /*утилиты*/
 @import "./utils/variables";
 @import "./utils/body";
 @import "./utils/container";
 @import "./utils/img";
 @import "./utils/section";
-
-@import "./base/normalize";
 
 /*шапка*/
 @import "./components/header/page-header";

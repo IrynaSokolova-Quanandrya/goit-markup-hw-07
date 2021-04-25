@@ -17,16 +17,12 @@
   flex-basis: calc((100% - 4 * 30px) / 4);
   width: 270px;
 }
-.icon {
+.fetures__box {
   display: flex;
   justify-content: center;
+  align-items: center;
   margin-bottom: 30px;
-}
-.icon__set {
-  width: 270px;
-  height: 120px;
   background-color: #f5f4fa;
-  padding: 25px 102px;
 }
 .fetures__title {
   margin-bottom: 10px;

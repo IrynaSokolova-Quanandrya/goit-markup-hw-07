@@ -1,3 +1,7 @@
+.join {
+  display: flex;
+  flex-direction: column;
+}
 .join__title,
 .footer__title {
   font-size: 20px;
@@ -7,7 +11,6 @@
 }
 
 .networks {
-  margin-top: 20px;
   margin-left: 0;
 }
 .networks__item {

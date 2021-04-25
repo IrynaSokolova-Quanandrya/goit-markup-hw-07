@@ -1,78 +1,4 @@
 @charset "UTF-8";
-/*утилиты*/
-body {
-  color: #757575;
-  background-color: #ffffff;
-  font-family: roboto, sans-serif;
-}
-
-*,
-*::before,
-*::after {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-a {
-  text-decoration: none;
-  color: #757575;
-}
-
-h1,
-h2,
-h3,
-p,
-ul {
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-.list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-
-.container {
-  width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 0;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
-.section__title {
-  margin-bottom: 50px;
-  color: #212121;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.2;
-  text-align: center;
-  letter-spacing: 0.03em;
-}
-
-.header {
-  border-bottom: 1px solid #cccccc;
-}
-
 /*! modern-normalize v1.0.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
 /*
 Document
@@ -342,6 +268,80 @@ Add the correct display in Chrome and Safari.
 */
 summary {
   display: list-item;
+}
+
+/*утилиты*/
+body {
+  color: #757575;
+  background-color: #ffffff;
+  font-family: roboto, sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #757575;
+}
+
+h1,
+h2,
+h3,
+p,
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.section__title {
+  margin-bottom: 50px;
+  color: #212121;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.header {
+  border-bottom: 1px solid #cccccc;
 }
 
 /*шапка*/
@@ -624,7 +624,6 @@ summary {
 }
 
 .form__field,
-.footer__field,
 .form__comments {
   padding-left: 42px;
   height: 40px;
@@ -749,21 +748,18 @@ summary {
   width: 270px;
 }
 
-.icon {
+.fetures__box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-bottom: 30px;
-}
-
-.icon__set {
-  width: 270px;
-  height: 120px;
   background-color: #f5f4fa;
-  padding: 25px 102px;
 }
 
 .fetures__title {
@@ -784,30 +780,31 @@ summary {
 }
 
 /*чем занимаемся*/
-.section__work {
+.section__title {
   padding-top: 0;
 }
 
-.image__work:not(:last-child) {
+.image__item:not(:last-child) {
   -ms-flex-preferred-size: calc((100% - 60px) / 3);
       flex-basis: calc((100% - 60px) / 3);
   margin-right: 30px;
   width: 370px;
 }
 
-.thumb {
+.image__thumb {
   position: relative;
   width: 100%;
   height: 100%;
 }
 
-.thumb__text {
+.image__box {
   position: absolute;
   bottom: 0;
   left: 0;
   margin: 0;
   width: 100%;
   height: 70px;
+  font-weight: bold;
   font-size: 14px;
   line-height: 16px;
   text-transform: uppercase;
@@ -927,7 +924,6 @@ summary {
 
 .customers__icon {
   fill: currentColor;
-  margin: 16px 32px;
 }
 
 /*подвал*/
@@ -985,6 +981,16 @@ summary {
   color: #2196f3;
 }
 
+.join {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 .join__title,
 .footer__title {
   font-size: 20px;
@@ -994,7 +1000,6 @@ summary {
 }
 
 .networks {
-  margin-top: 20px;
   margin-left: 0;
 }
 
@@ -1047,7 +1052,10 @@ summary {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 0;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  -webkit-transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer__input {
@@ -1056,7 +1064,7 @@ summary {
   margin-right: 12px;
   padding: 15px 16px;
   border-radius: 4px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  border: 1px solid rgba(3, 3, 3, 0.3);
   background-color: #2f303a;
 }
 
